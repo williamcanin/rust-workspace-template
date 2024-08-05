@@ -1,0 +1,16 @@
+# --- Lib config ---
+# Author: William C. Canin <https://williamcanin.github.io>
+
+[package]
+name = "lib"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+# === Windows dependencies only ====
+[target.'cfg(windows)'.dependencies]
+
+[dependencies]

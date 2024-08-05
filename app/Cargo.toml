@@ -1,0 +1,17 @@
+# --- App config ---
+# Author: William C. Canin <https://williamcanin.github.io>
+
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "app"
+path = "src/main.rs"
+
+# === Windows dependencies only ====
+[target.'cfg(windows)'.dependencies]
+
+[dependencies]
+lib = {path = "../lib"}

@@ -1,0 +1,33 @@
+# --- Workspace config ---
+# Author: William C. Canin <https://williamcanin.github.io>
+
+[workspace]
+resolver = "1"
+
+# ==== Add new packages here ====
+members = ["app", "lib"]
+
+# === Development environment ====
+[profile.dev.package."*"]
+opt-level = 0
+incremental = true
+
+# ==== PROFILE SETTINGS ====
+# ==== Larger executable and better performance ====
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+debug = false
+strip = true
+incremental = true
+
+# ==== Smaller executable and lower performance ====
+#[profile.release]
+#opt-level = 'z'
+#lto = true
+#codegen-units = 1
+#panic = "abort"
+#debug = false
+#strip = true
