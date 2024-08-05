@@ -16,12 +16,11 @@ $RECYCLE.BIN/
 # Rust taken https://github.com/github/gitignore/blob/main/Rust.gitignore
 # ----------------------------------------------------------------------------------------------
 target/
-debug/
-**/*/*.pdb
-Cargo.lock
 **/*/target/
-**/*/*.lock
+Cargo.lock
 **/*/Cargo.lock
+**/*/*.pdb
+**/*/*.lock
 **/*.rs.bk
 
 # Python taken https://github.com/github/gitignore/blob/main/Python.gitignore
@@ -44,9 +43,9 @@ Cargo.lock
 
 # NodeJS taken https://github.com/github/gitignore/blob/main/Node.gitignore
 # ----------------------------------------------------------------------------------------------
-node_modules
+node_modules/
 **/*/node_modules/
-dist
+dist/
 **/*/dist/
 dist-ssr
 *.local
@@ -62,10 +61,10 @@ Session.vim
 
 # Editors: directories and files
 # ----------------------------------------------------------------------------------------------
-.vscode/*
+.vscode/
 **/*/.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 **/*/.idea/
 .DS_Store
 *.suo
