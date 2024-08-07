@@ -14,6 +14,10 @@ path = "src/main.rs"
 [target.'cfg(windows)'.dependencies]
 dll = {path = "../dll"}
 
+# === Windows BUILD dependencies only ====
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1.12"
+
 [dependencies]
 lib = {path = "../lib"}
 
