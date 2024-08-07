@@ -16,7 +16,7 @@
             VALUE "CompanyName",        "My Company\0"
             VALUE "FileDescription",    "App example Rust\0"
             VALUE "FileVersion",        "0.1.0\0"
-            VALUE "LegalCopyright",     "Copyright Company Corporation. All rights reserved.\0"
+            VALUE "LegalCopyright",     "\251 Company Corporation. All rights reserved.\0"
             VALUE "OriginalFilename",   "app.exe\0"
             VALUE "ProductName",        "Application\0"
             VALUE "ProductVersion",     "0.1.0\0"
