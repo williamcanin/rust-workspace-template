@@ -12,6 +12,8 @@ path = "src/main.rs"
 
 # === Windows dependencies only ====
 [target.'cfg(windows)'.dependencies]
+dll = {path = "../dll"}
 
 [dependencies]
 lib = {path = "../lib"}
+

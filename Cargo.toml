@@ -5,7 +5,7 @@
 resolver = "1"
 
 # ==== Add new packages here ====
-members = ["app", "lib"]
+members = ["app", "dll", "lib"]
 
 # === Development environment ====
 [profile.dev.package."*"]

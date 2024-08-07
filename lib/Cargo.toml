@@ -6,11 +6,8 @@ name = "lib"
 version = "0.1.0"
 edition = "2021"
 
-[lib]
-name = "lib"
-path = "src/lib.rs"
-
 # === Windows dependencies only ====
 [target.'cfg(windows)'.dependencies]
+dll = {path = "../dll"}
 
 [dependencies]
