@@ -1,8 +1,6 @@
 mod tests;
 mod utils;
 
-use std::path::PathBuf;
-
 pub fn add(left: u64, right: u64) -> u64 {
   left + right
 }

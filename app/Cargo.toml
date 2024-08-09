@@ -19,5 +19,6 @@ dll = {path = "../dll"}
 winres = "0.1.12"
 
 [dependencies]
+dll = {path = "../dll"}
 lib = {path = "../lib"}
 
