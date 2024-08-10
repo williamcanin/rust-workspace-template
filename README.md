@@ -9,8 +9,9 @@ There are a few simple examples to show what the project structure would look li
 * Make >= 3.0
 * Git >= 2.0
 
-
 ## Usage
+
+### Development
 
 1 - Clone:
 
@@ -19,6 +20,14 @@ There are a few simple examples to show what the project structure would look li
 2 - Run the command below to see all commands:
 
 ```make```
+
+### Production
+
+1 - Run the command below:
+
+```make release```
+
+2 - On Windows, after compilation, add the `fs.dll` library path to the PATH or keep it in the same directory as the executable. On Linux, after compilation, add the `libfs.so` library path to the `LD_LIBRARY_PATH` environment variable.
 
 ## License
 

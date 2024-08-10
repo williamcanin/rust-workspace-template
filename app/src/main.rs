@@ -9,7 +9,17 @@ mod utils;
 use crate::utils::check::has_connection;
 use lib::{userprofile, add, division};
 
+#[cfg(target_os = "linux")]
 #[link(name = "fs", kind = "dylib")]
+extern {
+  #[allow(improper_ctypes)]
+  pub fn sub(left: u64, right: u64) -> u64;
+  #[allow(improper_ctypes)]
+  pub fn create_file(filepath: &String, content: &String);
+}
+
+#[cfg(target_os = "windows")]
+#[link(name = "fs.dll", kind = "dylib")]
 extern {
   #[allow(improper_ctypes)]
   pub fn sub(left: u64, right: u64) -> u64;
