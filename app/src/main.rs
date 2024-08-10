@@ -9,8 +9,7 @@ mod utils;
 use crate::utils::check::has_connection;
 use lib::{userprofile, add, division};
 
-#[cfg(target_os = "windows")]
-#[link(name = "dll.dll", kind = "dylib")]
+#[link(name = "fs", kind = "dylib")]
 extern {
   #[allow(improper_ctypes)]
   pub fn sub(left: u64, right: u64) -> u64;
@@ -18,9 +17,8 @@ extern {
   pub fn create_file(filepath: &String, content: &String);
 }
 
-
-
 fn main() {
+
   let numerator = 20.0;
   let denominator = 4.0;
   match division(numerator, denominator) {
@@ -49,6 +47,5 @@ fn main() {
   let filepath = r"C:\Users\admin\Desktop\file.txt".to_string();
   let content = "Hello".to_string();
 
-  #[cfg(target_os = "windows")]
   unsafe { create_file(&filepath, &content); }
 }

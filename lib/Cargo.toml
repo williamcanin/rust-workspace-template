@@ -8,6 +8,6 @@ edition = "2021"
 
 # === Windows dependencies only ====
 [target.'cfg(windows)'.dependencies]
-dll = {path = "../dll"}
+
 
 [dependencies]
