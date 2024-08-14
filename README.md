@@ -15,7 +15,7 @@ Here are some simple examples to show what the project structure would look like
 
 ```git clone https://github.com/williamcanin/rust-workspace-template.git```
 
-2 - Enter the `cdylib` or `dylib` directory.
+2 - Enter the `examples/cdylib` or `examples/dylib` directory.
 
 3 - Run the command below to see all commands:
 
