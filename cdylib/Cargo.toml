@@ -1,0 +1,28 @@
+# --- Workspace config ---
+# Author: William C. Canin <https://williamcanin.github.io>
+
+[workspace]
+resolver = "1"
+members = ["app", "utils"]
+
+# === Development environment ====
+[profile.dev.package."*"]
+opt-level = 0
+incremental = true
+
+# ==== PROFILE SETTINGS ====
+
+# ==== Larger executable and better performance ====
+[profile.release]
+opt-level = 3
+codegen-units = 1
+debug = false
+strip = true
+incremental = true
+
+## ==== Smaller executable and lower performance ====
+#[profile.release]
+#opt-level = 'z'
+#codegen-units = 1
+#debug = false
+#strip = true

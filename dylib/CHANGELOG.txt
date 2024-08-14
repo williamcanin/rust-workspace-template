@@ -1,0 +1,10 @@
+### Changelog
+
+#### v0.2.0
+
+[ ] Implement new functions
+
+#### v0.1.0
+
+[*] Releasing the version 0.1.0
+

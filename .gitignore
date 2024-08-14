@@ -22,6 +22,11 @@ Cargo.lock
 **/*/*.pdb
 **/*/*.lock
 **/*.rs.bk
+**/*file-rust.txt
+x86_64-unknown-linux-gnu/
+x86_64-pc-windows-msvc/
+**/*/x86_64-unknown-linux-gnu/
+**/*/x86_64-pc-windows-msvc/
 
 # Python taken https://github.com/github/gitignore/blob/main/Python.gitignore
 # ----------------------------------------------------------------------------------------------
@@ -46,7 +51,6 @@ Cargo.lock
 node_modules/
 **/*/node_modules/
 dist/
-**/*/dist/
 dist-ssr
 *.local
 **/*/public/

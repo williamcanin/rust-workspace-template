@@ -1,0 +1,13 @@
+#[target.x86_64-pc-windows-msvc]
+#rustflags = ["-C", "prefer-dynamic"]
+
+#[target.x86_64-unknown-linux-gnu]
+#rustflags = ["-C", "prefer-dynamic"]
+
+[build]
+# It is MANDATORY for the workspace project to be recognized as a dynamic library.
+rustflags = ["-C", "prefer-dynamic"]
+
+# Set the default target here if you want one of the systems to be the default
+# target-dir = "x86_64-unknown-linux-gnu"  # For Linux
+target-dir = "x86_64-pc-windows-msvc"    # For Windows

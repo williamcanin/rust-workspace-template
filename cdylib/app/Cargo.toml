@@ -1,0 +1,15 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "app"
+path = "src/main.rs"
+
+# === Windows BUILD dependencies only ====
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1.12"
+
+[dependencies]
+

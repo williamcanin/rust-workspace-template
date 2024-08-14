@@ -1,6 +1,0 @@
-# ==== Change the path (target-dir) where the project compilation will be kept ====
-# Note: You can put an absolute path, but remember if you are going to use it, use 2
-# (two) backslashes instead of 1 (one).
-
-[build]
-target-dir = "target"
