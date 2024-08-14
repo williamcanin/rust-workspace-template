@@ -1,4 +1,4 @@
-# Rust Workspace Template 🦀
+# Rust Workspace Template :crab:
 
 This is a simple template for a [workspace](https://doc.rust-lang.org/book/ch14-03-cargo-workspaces.html?highlight=worksp#creating-a-workspace)-based [Rust](https://www.rust-lang.org/) project.
 Here are some simple examples to show what the project structure would look like using `cdylib` and `dylib`.
